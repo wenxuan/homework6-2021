@@ -88,8 +88,8 @@ header{
 /*Requirement 9*/
 #logo{
    /*Your code here.*/
-   animation-name: logo_grow;
-   animation-duration:15s;
+   animation: logo_grow 15s 1;
+   -webkit-animation: logo_grow 15s 1;
  
 }
 
@@ -148,6 +148,7 @@ header{
 @media screen and (prefers-reduced-motion: reduce){
   #logo {
     animation: none;
+    -webkit-animation: none;
   }
 }
 
@@ -165,7 +166,7 @@ header{
   /*Requirement 15*/
   .nav_links{
     flex-direction: row;
-    justify-content: space-around;;
+    justify-content: space-around;
   }
   /*Requirement 16*/
   .price{

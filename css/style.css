@@ -37,7 +37,7 @@ header{
     /*Don't forget to vertically and horizontally 
     align the element*/
     display:flex;
-    align-items: center;
+    align-self: center;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -88,9 +88,8 @@ header{
 /*Requirement 9*/
 #logo{
    /*Your code here.*/
-   animation: logo_grow 15s 1;
-   -webkit-animation: logo_grow 15s 1;
- 
+   animation-name: logo_grow;
+   animation-duration:15s;
 }
 
 /*Keyframes for animation*/
@@ -148,7 +147,6 @@ header{
 @media screen and (prefers-reduced-motion: reduce){
   #logo {
     animation: none;
-    -webkit-animation: none;
   }
 }
 
@@ -166,7 +164,7 @@ header{
   /*Requirement 15*/
   .nav_links{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around;;
   }
   /*Requirement 16*/
   .price{
